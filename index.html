@@ -170,13 +170,11 @@
             </nav>
 
             <div class="flex items-center gap-4">
+                <button id="settings-btn" class="admin-only">Réglage</button>
                 <button id="admin-btn" class="text-gold-400 hover:text-white transition-colors" title="إدارة المتجر">
                     const isAdmin = true; 
 
-if (isAdmin) {
-    document.querySelectorAll('.admin-only').forEach(btn => {
-        btn.style.display = 'inline-block'; // Affiche le bouton Réglage
-    });
+
 }
                     <i class="fas fa-cog text-xl animate-spin-slow"></i>
                 </button>
