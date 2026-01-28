@@ -458,7 +458,13 @@
             renderAdminProducts();
             updateCartUI();
             setupEvents();
-            setupScrollReveal();
+            setupScrollReveal();const isAdmin = true; // à mettre à true uniquement pour toi
+
+if (isAdmin) {
+    document.querySelectorAll('.admin-only').forEach(btn => {
+        btn.style.display = 'inline-block'; // afficher le bouton
+    });
+}
         }
 
         function saveProducts() {
